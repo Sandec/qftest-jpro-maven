@@ -19,11 +19,6 @@
         <commons-io.version>2.16.1</commons-io.version>
         <cssfx.version>11.5.1</cssfx.version>
         <junit.version>5.11.0</junit.version>
-
-<!--        <qf.exec>/Applications/QF-Test.app/Contents/Resources/qftest/qftest-current/bin/qftest</qf.exec>-->
-<!--        <qf.reportfolder>qftest</qf.reportfolder>-->
-<!--        <qf.log>logFile.qrz</qf.log>-->
-<!--        <qf.suite>suites/jpro-maven.qft</qf.suite>-->
     </properties>
 
     <name>Hello JPro!</name>
@@ -56,30 +51,6 @@
                     <openURLOnStartup>false</openURLOnStartup>
                 </configuration>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-antrun-plugin</artifactId>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <phase>test</phase>-->
-<!--                        <configuration>-->
-<!--                            <target>-->
-<!--                                <exec executable="${qf.exec}">-->
-<!--                                    <arg value="-batch"/>-->
-<!--                                    <arg value="-report"/>-->
-<!--                                    <arg value="${qf.reportfolder}"/>-->
-<!--                                    <arg value="-runlog"/>-->
-<!--                                    <arg value="${qf.log}"/>-->
-<!--                                    <arg value="${qf.suite}"/>-->
-<!--                                </exec>-->
-<!--                            </target>-->
-<!--                        </configuration>-->
-<!--                        <goals>-->
-<!--                            <goal>run</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
         </plugins>
     </build>
 
