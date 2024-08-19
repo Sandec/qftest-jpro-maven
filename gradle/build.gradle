@@ -1,0 +1,32 @@
+plugins {
+    id 'de.qfs.qftest' version '2.0.2'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.0'
+}
+
+qftest {
+    baseUrl = "https://www.qfs.de/fileadmin/Webdata/pub/temp/31112/"
+    version = "8.0.1-dev"
+    arguments = ["-license", "qftest.license"]
+    reportDir = "qftest/report"
+    runLogDir = "qftest/log"
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        //outputs.upToDateWhen {false} //Enable if not running with 'clean'
+        showStandardStreams = true
+    }
+    qftest {
+        suites = ["suites/jpro.qft"] //updated with mvn commands
+    }
+}
