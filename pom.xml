@@ -21,7 +21,7 @@
         <junit.version>5.11.0</junit.version>
     </properties>
 
-    <name>Hello JPro!</name>
+    <name>QF-Test JPro Sample</name>
     <url>https://www.jpro.one/</url>
 
     <build>
