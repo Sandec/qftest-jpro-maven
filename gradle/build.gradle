@@ -27,6 +27,6 @@ test {
         showStandardStreams = true
     }
     qftest {
-        suites = ["suites/jpro.qft"] //updated with mvn commands
+        suites = ["../suites/jpro-maven.qft"] //updated with mvn commands
     }
 }
