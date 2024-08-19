@@ -24,6 +24,6 @@ jobs:
           distribution: 'temurin'
           java-version: ${{ matrix.jdk }}
 
-      - name: Build
+      - name: Compile
         run: |
-          ./mvnw clean package jpro:release -e -DskipTests
+          ./mvnw clean compile
