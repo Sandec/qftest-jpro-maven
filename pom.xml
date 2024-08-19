@@ -108,6 +108,7 @@
                         <configuration>
                             <executable>gradlew.bat</executable>
                             <arguments>
+                                <argument>clean</argument>
                                 <argument>test</argument>
                             </arguments>
                             <workingDirectory>${project.basedir}/gradle</workingDirectory>
@@ -140,6 +141,7 @@
                         <configuration>
                             <executable>./gradlew</executable>
                             <arguments>
+                                <argument>clean</argument>
                                 <argument>test</argument>
                             </arguments>
                             <workingDirectory>${project.basedir}/gradle</workingDirectory>
