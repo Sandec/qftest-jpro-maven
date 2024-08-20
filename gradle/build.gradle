@@ -18,6 +18,7 @@ qftest {
     arguments = ["-license", "../qftest.license"]
     reportDir = "../qftest/report"
     runLogDir = "../qftest/log"
+    keepRunLogs=true
 }
 
 test {
