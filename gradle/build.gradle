@@ -14,6 +14,7 @@ dependencies {
 
 qftest {
     baseUrl = "https://www.qfs.de/fileadmin/Webdata/pub/temp/31112/"
+    baseUrl = "https://www.qfs.de/fileadmin/Webdata/pub/dev/31172/"
     version = "8.0.1-dev"
     arguments = ["-license", "../qftest.license"]
     reportDir = "../qftest/report"
